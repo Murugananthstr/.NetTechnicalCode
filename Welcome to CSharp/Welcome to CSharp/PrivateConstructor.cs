@@ -10,7 +10,7 @@ namespace Welcome_to_CSharp
             return "Private Constructor Demo here";
         }
        }
-    class Program
+    class Program1
     {
         static void Main()
         {
