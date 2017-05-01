@@ -41,6 +41,7 @@ namespace DynamicMVC1
 
             DynamicMVCContext.DynamicMvcManager.RegisterDynamicMvc();
             DynamicMVCContext.DynamicMvcManager.SetDynamicRoutes(RouteTable.Routes);
+
             //DynamicMVCContext.DynamicMvcManager.Options.DynamicDropDownRecordLimit = 1;
         }
     }
