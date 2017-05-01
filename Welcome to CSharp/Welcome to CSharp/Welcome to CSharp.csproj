@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClass.cs" />
+    <Compile Include="CallerInfoAttributeDemo.cs" />
     <Compile Include="GenericDemo.cs" />
     <Compile Include="PrivateConstructor.cs" />
     <Compile Include="Program.cs" />
