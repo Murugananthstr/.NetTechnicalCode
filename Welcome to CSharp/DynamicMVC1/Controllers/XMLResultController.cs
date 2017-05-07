@@ -16,6 +16,7 @@ namespace DynamicMVC1.Controllers
                 
         }
         // GET: XMLResult
+        [Authorize]
         public override void ExecuteResult(ControllerContext context)
         {
             var response = context.HttpContext.Response;

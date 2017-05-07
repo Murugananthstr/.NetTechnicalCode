@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Welcome_to_CSharp.Program2</StartupObject>
+    <StartupObject>Welcome_to_CSharp.DelegateDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AbstractClass.cs" />
     <Compile Include="CallerInfoAttributeDemo.cs" />
+    <Compile Include="DelegateDemo.cs" />
     <Compile Include="GenericDemo.cs" />
     <Compile Include="PrivateConstructor.cs" />
     <Compile Include="Program.cs" />
