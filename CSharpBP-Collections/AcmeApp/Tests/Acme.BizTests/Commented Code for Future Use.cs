@@ -11,7 +11,7 @@
 ////        Mapper.CreateMap<LibraryItem, LibraryItemModel>()
 ////.ForMember(
 ////    dest => dest.Categories,
-////    opt => opt.MapFrom(src => src.LibraryItemCategories));
+////    opt => opt.MapFrom(src => src.LibraryItemCategories));  
 
 
 ////Mapper.Initialize(
