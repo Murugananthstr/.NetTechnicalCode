@@ -33,9 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Welcome_to_CSharp.DelegateDemo</StartupObject>
+    <StartupObject>Welcome_to_CSharp.ConversionofDictionaryObject</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AbstractClass.cs" />
     <Compile Include="CallerInfoAttributeDemo.cs" />
+    <Compile Include="ConversionofDictionaryObject.cs" />
     <Compile Include="DelegateDemo.cs" />
     <Compile Include="GenericDemo.cs" />
     <Compile Include="PrivateConstructor.cs" />
@@ -56,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
