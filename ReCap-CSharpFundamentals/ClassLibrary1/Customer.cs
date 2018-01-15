@@ -23,13 +23,19 @@ namespace ReCapCSharpFundamentals
                     string oldValue = _customeraddress;
                     _customeraddress = value;
 
-                    if(NameChangeDelegatePointer!=null)
-                            NameChangeDelegatePointer(oldValue, value);
+                    if (NameChangeDelegatePointer != null)
+                    {
+
+                        AddressChangedEventArgs args = new AddressChangedEventArgs();
+                        args.CustomerAddressOldValue = oldValue;
+                        args.CustomerAddressNewValue = value;
+                        NameChangeDelegatePointer(this, args);
+                    }
                 }
             }
         }
 
-        public NameChangedDelegateReference NameChangeDelegatePointer;
+        public event NameChangedDelegateReference NameChangeDelegatePointer;
        
     }
 }
