@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Welcome_to_CSharp
 {
 
@@ -7,6 +9,8 @@ namespace Welcome_to_CSharp
         public int ID { get; set; }
         public string FirstName { get; set; }
         public string SecondName { get; set; }
+
+        public List<string> listvar { get; set; }
 
         public string FullName ()
         {
