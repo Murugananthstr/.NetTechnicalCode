@@ -7,16 +7,18 @@ namespace ReCapCSharpFundamentals
 {
     public class Customer
     {
-       public string CustomerName { get; set; }
+        public string CustomerName { get; set; }
 
         private string _customeraddress;
 
-        public string CustomerAddress {
+        public string CustomerAddress
+        {
             get
             {
                 return _customeraddress;
             }
-            set {
+            set
+            {
 
                 if (_customeraddress != value)
                 {
@@ -36,6 +38,6 @@ namespace ReCapCSharpFundamentals
         }
 
         public event NameChangedDelegateReference NameChangeDelegatePointer;
-       
+
     }
 }

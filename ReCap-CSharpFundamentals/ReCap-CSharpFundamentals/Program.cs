@@ -19,12 +19,20 @@ namespace ReCap_CSharpFundamentals
             cus.NameChangeDelegatePointer += OnNameChange1;//Multicast Delegate
             cus.CustomerAddress = "No 14, Jayalakshimi Appartment, Chennai 73";
 
-
             Console.WriteLine("Invoked Customer Method");
+          
+
+            Worker worker = new Worker(new WorkPerformedEventArgs(5, WorkType.GenerateReport));
+          //  worker.WorkPerfomed += worker.OnWorkPerformed;
+
+            
+            var delRes = worker.OnWorkPerformed;
+
+
             Console.ReadLine();
-                
            }
 
+        
         private static void OnNameChange(object sender, AddressChangedEventArgs args)
         {
             Console.WriteLine("{0} is now changed to {1}", args.CustomerAddressOldValue, args.CustomerAddressNewValue);

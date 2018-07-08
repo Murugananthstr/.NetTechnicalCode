@@ -9,7 +9,14 @@ namespace ReCapCSharpFundamentals
     //public delegate void NameChangedDelegateReference(string oldNameValue, string newNameValue); Only for Delegates
 
     public delegate void NameChangedDelegateReference(object sender, AddressChangedEventArgs args);
+    public delegate int WorkPerformHandler(int hours, WorkType workType);
+    
+    public enum WorkType
+    {
+        GenerateReport = 0,
+        ContractType,
+        GeneralHours
 
-
+    }
 
 }
